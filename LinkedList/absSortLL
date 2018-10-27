@@ -1,0 +1,37 @@
+/* Question: Absolute List Sorting
+    Link: https://practice.geeksforgeeks.org/problems/absolute-list-sorting/1
+*/
+
+/*Your method shouldn't print anything
+ it should transform the passed linked list */
+void sortList(Node** head)
+{
+    Node* prev = (*head); 
+    Node* curr = (*head)->next; 
+  
+    while (curr != NULL) 
+    { 
+        // If curr is smaller than prev, then 
+        // it must be moved to head 
+        if (curr->data < prev->data) 
+        { 
+            // Detach curr from linked list 
+            prev->next = curr->next; 
+  
+            // Move current node to beginning 
+            curr->next = (*head); 
+            (*head) = curr; 
+  
+            // Update current 
+            curr = prev; 
+        } 
+  
+        // Nothing to do if current element 
+        // is at right place 
+        else
+            prev = curr; 
+  
+        // Move current 
+        curr = curr->next; 
+    }
+}
