@@ -4,8 +4,7 @@
 
 ## String
 
-## Linked List
-[Solved Problems](https://github.com/sani29/GeeksForGeeksPractice/tree/master/LinkedList)
+## [Linked List](https://github.com/sani29/GeeksForGeeksPractice/tree/master/LinkedList)
 
 ## Tree
   ### Generic Tree
