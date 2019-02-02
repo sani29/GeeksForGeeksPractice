@@ -1,6 +1,6 @@
 # GeeksForGeeks Questions Practice
 
-## Array
+## [Array](https://github.com/sani29/GeeksForGeeksPractice/tree/master/Array)
 
 ## String
 
